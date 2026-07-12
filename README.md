@@ -1,5 +1,9 @@
 # disco
 
+[![CI](https://github.com/ss1738/disco/actions/workflows/ci.yml/badge.svg)](https://github.com/ss1738/disco/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/disco-search)](https://pypi.org/project/disco-search/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Verifier-grounded evolutionary discovery** — an open, general form of the
 FunSearch loop. A pluggable proposer suggests candidates, a **hard verifier**
 certifies them, and island-model evolution keeps improving. The core guarantee:

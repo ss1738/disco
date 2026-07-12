@@ -1,6 +1,5 @@
 """Tests for the discovery core and bundled problems."""
 
-import random
 
 import pytest
 

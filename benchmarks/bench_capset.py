@@ -42,7 +42,7 @@ def main() -> None:
     random_size = random_search(problem, budget, rng)
 
     print(f"problem:              cap set in AG({N},3)  ({3**N} points)")
-    print(f"best-known maximum:   45")
+    print("best-known maximum:   45")
     print(f"evaluation budget:    {budget}")
     print(f"random search:        {random_size}")
     print(f"disco (evolutionary): {disco_size}")
