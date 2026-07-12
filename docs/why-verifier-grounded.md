@@ -74,4 +74,4 @@ from disco.proposers import LLMProposer
 problem.propose = LLMProposer(complete=my_llm, render=my_prompt, parse=my_parser)
 ```
 
-Code, tests, benchmark: <REPO_URL>
+Code, tests, benchmark: https://github.com/ss1738/disco

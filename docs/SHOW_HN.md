@@ -29,7 +29,7 @@ verifier is exact. On AG(5,3) with the same evaluation budget: **random restart
 39, disco 40** (every size independently re-verified); it reaches the proven
 maximum 20 on AG(4,3).
 
-Repo, tests, benchmark: <REPO_URL>
+Repo, tests, benchmark: https://github.com/ss1738/disco
 
 Honest notes: the win over random restart comes from a mutation operator that
 preserves a *heritable core* — a naive fully-greedy rebuild matches random, and I
