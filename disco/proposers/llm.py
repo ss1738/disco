@@ -42,6 +42,6 @@ class LLMProposer:
         try:
             return self.parse(self.complete(self.render(parents)))
         except Exception:
-            # A bad generation is just a failed proposal; return an empty-ish
-            # candidate that the verifier will reject, keeping the loop robust.
-            return parents[0] if parents else None
+            # A malformed generation is dropped: returning None fails verification,
+            # so the proposal is skipped and costs one evaluation and nothing else.
+            return None

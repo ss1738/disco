@@ -9,8 +9,8 @@
 
 DeepMind's FunSearch showed you can discover new results in maths and algorithms
 by pairing an LLM (which proposes candidates) with an evaluator (which scores
-them) and evolutionary search. The harness is closed. disco is a clean, general,
-zero-dependency open version.
+them) and evolutionary search. Its released code is a research skeleton, not a
+runnable general harness. disco is a clean, self-contained, zero-dependency version.
 
 The one invariant it enforces: **only candidates a hard verifier certifies as
 valid ever enter a population.** A proposer, mutation operator, crossover, or an
@@ -50,6 +50,6 @@ near what's already verified to work.
 
 ## Where else to post
 - r/MachineLearning ("[P] ..."), r/compsci
-- X/Twitter: "FunSearch is closed. Here's an open, general version in ~250 lines"
+- X/Twitter: "FunSearch's released code is a skeleton. Here's a clean, general, runnable version in ~250 lines"
   + the cap-set numbers
 - lobste.rs (ml / compsci)

@@ -52,6 +52,10 @@ def test_reproducible_with_seed():
 
 def test_capset_verifier_is_exact():
     p = CapSet(2)  # AG(2,3): 9 points, max cap = 4
+    # Pin the collinearity arithmetic to independently hand-computed values, so
+    # this doesn't just check is_cap against its own _third.
+    assert p._third((0, 0), (0, 1)) == (0, 2)
+    assert p._third((1, 2), (2, 1)) == (0, 0)
     # A known line (a, b, third(a,b)) must be rejected.
     a, b = (0, 0), (0, 1)
     line = frozenset({a, b, p._third(a, b)})

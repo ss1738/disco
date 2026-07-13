@@ -26,8 +26,9 @@ print(problem.is_cap(best.candidate))     # True  (re-verified, exact)
 
 DeepMind's FunSearch showed that an LLM proposing candidates + an evaluator
 scoring them + evolutionary search can discover new results in maths and
-algorithms. That harness is closed. disco is a clean, general, open version of
-the same loop:
+algorithms. Its released code is a research skeleton (no bundled model or eval
+harness, not meant to run as-is). disco is a clean, self-contained, general
+version of the same loop:
 
 - **Proposer** (pluggable): a mutation operator, a crossover, or an **LLM**
   (`disco.proposers.LLMProposer` is what turns disco into FunSearch).
